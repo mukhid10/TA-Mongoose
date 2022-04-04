@@ -15,6 +15,9 @@ mongoose
   app.use(express.urlencoded({ extended: true }))
 
 app.use(allRouter)
+app.get('/', (req, res)=>{
+  res.send('heloooo')
+})
 
 app.listen(PORT, () => {
   console.log("server online on PORT", PORT);
